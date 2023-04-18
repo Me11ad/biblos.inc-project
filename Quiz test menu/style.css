@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'Kanit';
+}
+.wrapper {
+    max-width: auto;
+    margin: 0 auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+.q1 {
+    position: relative;
+    width:  400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+height: 100%;
+line-height: 1;
+width: 1610px;
+max-width: auto;
+margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.play{
+  
+font-family: 'Kanit';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 154px;
+
+color: #F7F7F7;
+display: flex;
+justify-content: center;
+cursor: pointer;
+}
