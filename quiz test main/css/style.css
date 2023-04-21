@@ -1,0 +1,26 @@
+h2{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+    margin: 0;
+}
+ul li{
+    display: flex;
+    justify-content: center;
+}
+ul li label{
+    cursor: pointer;
+}
+button{
+    display: block;
+    justify-content: space-between;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+}
