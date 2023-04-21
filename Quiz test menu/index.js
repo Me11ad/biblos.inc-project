@@ -1,11 +1,104 @@
-class quiz
-{
-    constructor(type , quest , result)
-}
-this.type = type;
+const quizData = [
+ {
+    qestion:'1. Какой объем памяти имела автоматическая цифровая вычислительная машина М-1?',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },
+ {
+    qestion:'',
+    a:'',
+    b:'',
+    c:'',
+    d:'',
+    correct:'',
+ },   
+];
 
-this.quest = quest;
 
-this.result = result;
-
-
+const quiz = document.getElementById('quiz')
+const answer = document.querySelectorAll('.answer')
+const qestion = document.getElementById('question')
+const 
