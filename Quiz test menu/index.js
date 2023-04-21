@@ -1,6 +1,6 @@
 const quizData = [
  {
-    qestion:'1. Какой объем памяти имела автоматическая цифровая вычислительная машина М-1?',
+    qestion:'Какой объем памяти имела автоматическая цифровая вычислительная машина М-1?',
     a:'1000000 слов',
     b:'1024 слова',
     c:'256 слов',
@@ -26,7 +26,7 @@ const quizData = [
  {
     qestion:'Какому устройству дал имя винтовочный патрон американского происхождения?',
     a:'ROM',
-    b:'CPU',
+    b:'CPUпет пве',
     c:'RAM',
     d:'HDD',
     correct:'HDD',
@@ -99,6 +99,7 @@ const answer_d = document.getElementById('answer_d')
 const sumbit = document.getElementById('sumbit')
 
 let currentQuiz = 0
+let score = 0
 
 loadQuiz()
 
@@ -131,21 +132,22 @@ function getSelect(){
 
 }
 
+
 sumbit.addEventListener('click',() =>{
-   const answers = getSelect()
+   const answer = getSelect()
 
-   if(answers === quizData[currentQuiz].correct){
-      score++
-   }
-
+   if (answer === quizData[currentQuiz].correct){
+      score += 25
+    }
+   
    currentQuiz++
 
    if(currentQuiz < quizData.length){
       loadQuiz()
    } else{
-      quiz.innerHTML =quiz.innerHTML = 
+      quiz.innerHTML =
       `
-      <h2>Ты набрал ${quizData.length} очков</h2>
+      <h2>Ты набрал ${score} очков</h2>
       <button onclick="location.reload()">Reload</button>
       `
    }
