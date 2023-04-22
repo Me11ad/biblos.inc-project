@@ -4,6 +4,11 @@
     padding: 0;
     background-color: rgb(255, 255, 255);
     font-family: 'Kanit';
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
 }
 .wrapper {
     max-width: auto;
