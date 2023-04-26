@@ -147,7 +147,7 @@ sumbit.addEventListener('click',() =>{
    } else{
       quiz.innerHTML =
       `
-      <h2>Ты набрал ${score}/${quizData.length} очков</h2>
+      <h2>Ты набрал ${score} из ${quizData.length}</h2>
       <button onclick="location.reload()">Reload</button>
       `
   }
