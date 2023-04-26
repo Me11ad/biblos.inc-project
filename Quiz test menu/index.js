@@ -1,27 +1,27 @@
 const quizData = [
  {
-    qestion:'Какой объем памяти имела автоматическая цифровая вычислительная машина М-1?',
-    a:'1000000 слов',
-    b:'1024 слова',
-    c:'256 слов',
-    d:'1000 слов',
-    correct:'256 слов',
+    qestion:"Какой объем памяти имела автоматическая цифровая вычислительная машина М-1?",
+    a:"1000000 слов",
+    b:"1024 слова",
+    c:"256 слов",
+    d:"1000 слов",
+    correct:"c",
  },
  {
-    qestion:'Какого числа отмечается День программиста (256 день в году) в високосный год?',
-    a:'12 сентября',
-    b:'13 сентября',
-    c:'4 декабря',
-    d:'1 сентября',
-    correct:'12 сентября',
+    qestion:"Какого числа отмечается День программиста (256 день в году) в високосный год?",
+    a:"12 сентября",
+    b:"13 сентября",
+    c:"4 декабря",
+    d:"1 сентября",
+    correct:"a",
  },
  {
-    qestion:'Мотылек замкнул крылышками контакты. Какое жаргонное слово в программировании появилось по этому случаю?',
-    a:'error',
-    b:'bug',
-    c:'breakdown',
-    d:'mistake',
-    correct:'bug',
+    qestion:"Мотылек замкнул крылышками контакты. Какое жаргонное слово в программировании появилось по этому случаю?",
+    a:"error",
+    b:"bug",
+    c:"breakdown",
+    d:"mistake",
+    correct:"b",
  },
  {
     qestion:'Какому устройству дал имя винтовочный патрон американского происхождения?',
@@ -29,7 +29,7 @@ const quizData = [
     b:'CPUпет пве',
     c:'RAM',
     d:'HDD',
-    correct:'HDD',
+    correct:'d',
  },
  {
     qestion:'Создание какого языка программирования пока не отмечено премией Тьюринга?',
@@ -37,7 +37,7 @@ const quizData = [
     b:'Фортран',
     c:'Модула',
     d:'Си',
-    correct:'Си',
+    correct:'d',
  },
  {
     qestion:'Как называют шуточный секрет, заложенный создателями в ПО?',
@@ -45,7 +45,7 @@ const quizData = [
     b:'колядка',
     c:'пасхалка',
     d:'сырок',
-    correct:'пасхалка',
+    correct:'c',
  },
  {
     qestion:'Идеи двоичного кодирования были заложены',
@@ -53,7 +53,7 @@ const quizData = [
     b:'Готфрид Вильгельм Лейбницом',
     c:'Адой Лавлейс',
     d:'Чарльзом Беббиджем',
-    correct:'Готфрид Вильгельм Лейбницом',
+    correct:'b',
  },
  {
     qestion:'Какова была тактовая частота у первой модели персонального компьютера фирмы IBM?',
@@ -61,7 +61,7 @@ const quizData = [
     b:'8 МГц',
     c:'4,77 МГц',
     d:'8800 Гц',
-    correct:'4,77 МГц',
+    correct:'c',
  },
  {
     qestion:'Первая ЭВМ в СССР называлась:',
@@ -69,23 +69,23 @@ const quizData = [
     b:'МЭСМ',
     c:'IBM PC',
     d:'БЭСМ',
-    correct:'МЭСМ',
+    correct:'b',
  },
  {
-    qestion:'Первым изобретателем перфокарт был:',
-    a:'Д. Неппер',
-    b:'В. Шиккард',
-    c:'Ж. Жаккард',
-    d:'Б. Паскаль',
-    correct:'Ж. Жаккард',
+    qestion:"Первым изобретателем перфокарт был:",
+    a:"Д. Неппер",
+    b:"В. Шиккард",
+    c:"Ж. Жаккард",
+    d:"Б. Паскаль",
+    correct:"c",
  },
  {
-    qestion:'В каком году появился язык программирования Java?',
-    a:'1992',
-    b:'1994',
-    c:'1995',
-    d:'1997',
-    correct:'1995',
+    qestion:"В каком году появился язык программирования Java?",
+    a:"1992",
+    b:"1994",
+    c:"1995",
+    d:"1997",
+    correct:"c",
  },
 ];
 
@@ -104,18 +104,18 @@ let score = 0
 loadQuiz()
 
 function loadQuiz(){
-   selectAnswer()
+   deselectAnswer()
    
    const currentQuizData = quizData[currentQuiz]
 
-   qestion.innerText = currentQuizData.qestion
-   answer_a.innerText = currentQuizData.a
-   answer_b.innerText = currentQuizData.b
-   answer_c.innerText = currentQuizData.c
-   answer_d.innerText = currentQuizData.d
+   qestion.innerText = currentQuizData.qestion;
+   answer_a.innerText = currentQuizData.a;
+   answer_b.innerText = currentQuizData.b;
+   answer_c.innerText = currentQuizData.c;
+   answer_d.innerText = currentQuizData.d;
 }
 
-function selectAnswer(){
+function deselectAnswer(){
    answer.forEach(answer => answer.cheked = false)
 }
 
@@ -126,7 +126,7 @@ function getSelect(){
       if(answer.cheked){
          answers = answer.id
       }
-   })
+  })
 
    return answers
 
@@ -137,7 +137,7 @@ sumbit.addEventListener('click',() =>{
    const answer = getSelect()
 
    if (answer === quizData[currentQuiz].correct){
-      score += 25
+     score ++
     }
    
    currentQuiz++
@@ -147,12 +147,8 @@ sumbit.addEventListener('click',() =>{
    } else{
       quiz.innerHTML =
       `
-      <h2>Ты набрал ${score} очков</h2>
+      <h2>Ты набрал ${score}/${quizData.length} очков</h2>
       <button onclick="location.reload()">Reload</button>
       `
-   }
+  }
 })
-
-
-
-
