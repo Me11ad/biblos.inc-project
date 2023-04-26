@@ -148,11 +148,7 @@ sumbit.addEventListener('click',() =>{
       quiz.innerHTML =
       `
       <h2>Ты набрал ${score} из ${quizData.length}</h2>
-<<<<<<< HEAD
       <button class="reload" onclick="location.reload()">Начать заново</button>
-=======
-      <button onclick="location.reload()">Reload</button>
->>>>>>> 98d4db229b9e3904cca4a34a7830b58f8288b9fc
       `
   }
 })
