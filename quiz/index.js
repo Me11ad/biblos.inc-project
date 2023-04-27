@@ -163,5 +163,6 @@ const quizData = [
         <h2>Ты набрал ${score} из ${quizData.length}</h2>
         <button class="reload" onclick="location.reload()">Начать заново</button>
         `
+        document.getElementById("sumbit").style.visibility = "hidden"
     }
   })
