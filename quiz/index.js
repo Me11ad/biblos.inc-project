@@ -116,14 +116,14 @@ const quizData = [
   }
   
   function deselectAnswer(){
-     answerElement.forEach(answer => answer.cheked = true)
+     answerElement.forEach(answer => answer.cheсked = true)
   }
   
   function getSelect(){
      let answers
   
      answerElement.forEach(answer =>{
-        if(answer.cheked){
+        if(answer.cheсked){
            answers = answer.id
         }
     })
