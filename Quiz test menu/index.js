@@ -116,30 +116,27 @@ function loadQuiz(){
 }
 
 function deselectAnswer(){
-   answer.forEach(answer => answer.cheked = false)
+   answer.forEach(answer => answer.checked = true)
 }
 
 function getSelect(){
    let answers
 
    answer.forEach(answer =>{
-      if(answer.cheked){
+      if(answer.checked){
          answers = answer.id
       }
   })
-
    return answers
-
 }
 
 
 sumbit.addEventListener('click',() =>{
    const answer = getSelect()
 
-   if (answer === quizData[currentQuiz].correct){
-     score ++
+   if (answer === quizData[currentQuiz].correct) {
+     score++
     }
-   
    currentQuiz++
 
    if(currentQuiz < quizData.length){
@@ -150,5 +147,6 @@ sumbit.addEventListener('click',() =>{
       <h2>Ты набрал ${score} из ${quizData.length}</h2>
       <button class="reload" onclick="location.reload()">Начать заново</button>
       `
+      document.getElementById("sumbit").style.visibility = "hidden"
   }
 })
