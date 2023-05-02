@@ -87,22 +87,22 @@ const quizData = [
       d:"1997",
       correct:"c",
    },
-  ];
-  
-  const quiz = document.getElementById('quiz')
-  const answerElement = document.querySelectorAll('.answer')
-  const qestion = document.getElementById('question')
-  const answer_a = document.getElementById('answer_a')
-  const answer_b = document.getElementById('answer_b')
-  const answer_c = document.getElementById('answer_c')
-  const answer_d = document.getElementById('answer_d')
-  const sumbit = document.getElementById('sumbit')
-  const timer = document.getElementById('timer')
-  const click = document.getElementById('btn')
-  
-  let currentQuiz = 0
-  let score = 0
-  
+];
+
+const quiz = document.getElementById('quiz')
+const answerElement = document.querySelectorAll('.answer')
+const qestion = document.getElementById('question')
+const answer_a = document.getElementById('answer_a')
+const answer_b = document.getElementById('answer_b')
+const answer_c = document.getElementById('answer_c')
+const answer_d = document.getElementById('answer_d')
+const sumbit = document.getElementById('sumbit')
+const timer = document.getElementById('timer')
+
+let currentQuiz = 0
+let score = 0
+let count = 15
+
   loadQuiz()
   
   function loadQuiz(){
@@ -132,30 +132,30 @@ const quizData = [
   
      return answers
   
-  }
-
-  function getTimer (){
-   let count = 15
-   const time = ()=>{
-   countdown = setInterval(() =>{
-      count--
-      timer.innerHTML = `${count}s`
-      if (count == 0){
-         clearInterval(countdown)
-      }
-   }, 1000)
    }
-   time()
-  }
-  getTimer()
-  
-  click.addEventListener('click',() =>{
-     const answer = getSelect()
-  
-     if (answer === quizData[currentQuiz].correct){
-       score++
+   
+   
+   const time = ()=>{
+      countdown = setInterval(() =>{
+         count--
+         timer.innerHTML = `${count}s`
+         if (count == 0){
+            clearInterval(countdown)
+
+            displayNext()
+         }
+      }, 1000)
       }
+      time()
+      
+  sumbit.addEventListener('click',(displayNext = () =>{
+     const answer = getSelect()
      
+
+     if (answer === quizData[currentQuiz].correct){
+        score++
+      }
+      
      currentQuiz++
   
      if(currentQuiz < quizData.length){
@@ -167,5 +167,31 @@ const quizData = [
         <button class="reload" onclick="location.reload()">Начать заново</button>
         `
         document.getElementById("sumbit").style.visibility = "hidden"
+        time()
     }
   })
+  )
+
+//   nextBtn.addEventListener("click",(displayNext = () => {
+//      //increment questionCount
+//      questionCount += 1;
+//      //if last question
+//      if (questionCount == quizArray.length) {
+//        //hide question container and display score
+//        displayContainer.classList.add("hide");
+//        scoreContainer.classList.remove("hide");
+//        //user score
+//        userScore.innerHTML =
+//          "Your score is " + scoreCount + " out of " + questionCount;
+//      } else {
+//        //display questionCount
+//        countOfQuestion.innerHTML =
+//          questionCount + 1 + " of " + quizArray.length + " Question";
+//        //display quiz
+//        quizDisplay(questionCount);
+//        count = 11;
+//        clearInterval(countdown);
+//        timerDisplay();
+//      }
+//    })
+//  );
