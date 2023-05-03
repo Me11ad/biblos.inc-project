@@ -49,6 +49,7 @@ header {
 
 .menu-style {
   padding-right: 50px;
+  pointer-events: none;
 }
 
 main {
