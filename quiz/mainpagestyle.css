@@ -49,6 +49,7 @@ header {
 
 .menu-style {
   padding-right: 50px;
+  pointer-events: none;
 }
 
 main {
@@ -117,10 +118,4 @@ footer {
 .footer-text-style:hover {
   color: rgb(187, 172, 255);
   transition: 0.2s linear;
-}
-
-.bottom-line-svg {
-  display: flex;
-  justify-content: center;
-  background-size: cover;
 }
