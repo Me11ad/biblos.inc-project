@@ -1,4 +1,12 @@
-/* Шрифты подключить */
+@font-face {
+	font-family: 'MADELikesSlab';
+	src: url('./fonts/madelikesslab.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/madelikesslab.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/madelikesslab.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/madelikesslab.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/madelikesslab.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/madelikesslab.svg#madelikesslab') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 
 * {
 	margin: 0;
@@ -8,11 +16,19 @@
 
 body {
   background: rgb(118,0,142);
-  background: linear-gradient(0deg, rgba(118,0,142,1) 0%, rgba(202,0,255,1) 100%);
+  background: linear-gradient(0deg, #5c0e9c 25%, #9a3bf3 50%);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
-  height: 350px;
+  border-bottom: 6px #FFF1FE groove;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,13 +38,17 @@ header {
   display: flex;
   justify-content: flex-start;
   pointer-events: none;
+  width: 300px;
+  height: 275px;
 }
 
-.searchbar {
-  max-width: 600px;
-  padding-top: 200px;
+.menu {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+.menu-style {
+  padding-right: 50px;
 }
 
 main {
@@ -52,46 +72,50 @@ main {
 .quiz-name {
   display: flex;
   justify-content: center;
+  color: #FFF1FE;
+  font-family: "MADELikesSlab";
+  font-size: 30px;
+  padding-bottom: 8px;
 }
 
+.quiz-name:hover {
+color: rgb(187, 172, 255);
+transition: 0.2s linear;
+} 
+
 .quiz-pic {
-  border: 6px #A33EF3 solid;
-	border-radius: 15px;
+  border: 5px #572288 solid;
+	border-radius: 16px;
   display: flex;
   justify-content: center;
-  transform: scale(0.9);
+  width: 300px;
+  height: 163px;
 }
 
 .quiz {
-  padding: 20px 20px 20px 20px;
+  padding: 50px 60px 50px 60px;
 }
 
 footer {
+  border-top: 6px #FFF1FE dotted;
   height: 160px;
   padding-top: 40px;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .footer-menu {
   display: flex;
   justify-content: space-around;
-  padding-top: 40px;
+  padding-top: 25px;
 }
 
 .footer-text-style {
-  font-size: 35px;
-  color: white;
+  font-size: 30px;
+  color: #FFF1FE;
+  font-family: "MADELikesSlab";
 }
 
 .footer-text-style:hover {
-  color: aquamarine;
+  color: rgb(187, 172, 255);
   transition: 0.2s linear;
 }
 
