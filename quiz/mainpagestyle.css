@@ -28,7 +28,6 @@ a {
 }
 
 header {
-  border-bottom: 6px #FFF1FE groove;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -118,4 +117,93 @@ footer {
 .footer-text-style:hover {
   color: rgb(187, 172, 255);
   transition: 0.2s linear;
+}
+
+@media screen and (max-width: 1260px) {
+  .main-block1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-block2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-style {
+    padding: 0 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .menu-style {
+    padding: 0 10px 0 10px;
+    transform: scale(0.9);
+  }
+
+  .logotype {
+    transform: scale(0.9);
+  }
+
+  .footer-text-style {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .menu-style {
+    padding: 0 5px 0 5px;
+    transform: scale(0.8);
+  }
+
+  .logotype {
+    transform: scale(0.8);
+  }
+
+  .main-block1 {
+    transform: scale(0.9);
+    margin-bottom: -60px;
+  }
+
+  .main-block2 {
+    transform: scale(0.9);
+    margin-bottom: -20px;
+  }
+
+  .footer-text-style {
+    font-size: 20px;
+  }
+
+  .quiz {
+    padding: 30px 40px 30px 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .menu-style {
+    padding: 0 3px 0 3px;
+    transform: scale(0.6);
+  }
+
+  .footer-text-style {
+    font-size: 30px;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
 }
