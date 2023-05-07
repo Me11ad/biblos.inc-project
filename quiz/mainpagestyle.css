@@ -140,6 +140,10 @@ footer {
   .menu-style {
     padding: 0 20px 0 20px;
   }
+
+  .menu {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -188,12 +192,13 @@ footer {
 
 @media screen and (max-width: 375px) {
   .menu-style {
-    padding: 0 3px 0 3px;
+    padding: 0;
     transform: scale(0.6);
   }
 
   .footer-text-style {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 5px;
   }
 
   .footer-menu {
@@ -205,5 +210,21 @@ footer {
 
   footer {
     padding-top: 10px;
+    height: 200px;
+  }
+
+  .quiz {
+    padding: 0;
+  }
+
+  .quiz-name {
+    padding-top: 30px;
+  }
+  .main-block1 {
+    margin-top: -25px;
+  }
+
+  .main-block2 {
+    margin-bottom: 20px;
   }
 }
