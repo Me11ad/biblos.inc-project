@@ -227,4 +227,8 @@ footer {
   .main-block2 {
     margin-bottom: 20px;
   }
+
+  .menu {
+    padding: 0;
+  }
 }
