@@ -107,7 +107,7 @@ let score = 0
 
 const time = () => {
    console.log('sfasad')
-   let count = 20
+   let count = 30
    countdown = setInterval(() => {
       count--
       timer.innerHTML = `${count}s`
@@ -174,7 +174,7 @@ sumbit.addEventListener('click', (displayNext = () => {
        <button class="reload" onclick="location.reload()">Начать заново</button>
        `
       document.getElementById("sumbit").style.visibility = "hidden"
-
+      document.getElementById("timer").style.visibility = "hidden"
    }
 })
 )

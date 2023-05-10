@@ -174,7 +174,7 @@ sumbit.addEventListener('click', (displayNext = () => {
       <button class="reload" onclick="location.reload()">Начать заново</button>
       `
      document.getElementById("sumbit").style.visibility = "hidden"
-
+     document.getElementById("timer").style.visibility = "hidden"
   }
 })
 )
