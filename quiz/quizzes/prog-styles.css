@@ -210,3 +210,21 @@ footer {
   color: rgb(187, 172, 255);
   transition: 0.2s linear;
 }
+
+@media screen and (max-width: 785px) {
+  .footer-text-style {
+    font-size: 20px;
+  }
+  .footer-menu {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+}
