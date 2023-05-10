@@ -129,6 +129,8 @@ a:hover {
 .owners-avatars {
     pointer-events: none;
     transform: scale(0.9);
+    border: solid 8px #470081;
+    border-radius: 300px;
 }
 
 .social-links-style {
