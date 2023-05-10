@@ -121,8 +121,9 @@ h2 {
 .time{
   display: flex;
   justify-content: center;
-  transform: translate(0, -240px);
+  transform: translate(0, -245px);
   color: #f1a809;
+  font-size: 30px;
 }
 
 footer {
