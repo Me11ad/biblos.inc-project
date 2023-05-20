@@ -136,133 +136,131 @@ a:hover {
 .social-links-style {
     padding: 40px 0 0 70px;
 }
+  
+@media screen and (max-width: 1100px) {
+  .owner-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  .text-align {
+    display: flex;
+    justify-content: center;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+}
 
-@media screen and (max-width: 1260px) {
-    .main-block1 {
-      display: flex;
-      flex-direction: column;
-    }
-    .main-block2 {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-  
-  @media screen and (max-width: 875px) {
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .menu-style {
-      padding: 0 20px 0 20px;
-    }
-  
-    .menu {
-      padding-top: 20px;
-    }
-  }
-  
-  @media screen and (max-width: 530px) {
-    .menu-style {
-      padding: 0 10px 0 10px;
-      transform: scale(0.9);
-    }
-  
-    .logotype {
-      transform: scale(0.9);
-    }
-  
-    .footer-text-style {
-      font-size: 25px;
-    }
-  }
-  
-  @media screen and (max-width: 430px) {
-    .menu-style {
-      padding: 0 5px 0 5px;
-      transform: scale(0.8);
-    }
-  
-    .logotype {
-      transform: scale(0.8);
-    }
-  
-    .main-block1 {
-      transform: scale(0.9);
-      margin-bottom: -60px;
-    }
-  
-    .main-block2 {
-      transform: scale(0.9);
-      margin-bottom: -20px;
-    }
-  
-    .footer-text-style {
-      font-size: 20px;
-    }
-  
-    .quiz {
-      padding: 30px 40px 30px 40px;
-    }
-  }
-  
-  @media screen and (max-width: 375px) {
-    .menu-style {
-      padding: 0;
-      transform: scale(0.6);
-    }
-  
-    .footer-text-style {
-      font-size: 25px;
-      padding: 5px;
-    }
-  
-    .footer-menu {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 25px;
-    }
-  
-    footer {
-      padding-top: 10px;
-      height: 200px;
-    }
-  
-    .quiz {
-      padding: 0;
-    }
-  
-    .quiz-name {
-      padding-top: 30px;
-    }
-    .main-block1 {
-      margin-top: -25px;
-    }
-  
-    .main-block2 {
-      margin-bottom: 20px;
-    }
-  
-    .menu {
-      padding: 0;
-    }
+@media screen and (max-width: 875px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  @media screen and (max-width: 1090px) {
-    .owner-position {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    .owners-avatars {
-        max-width: 300px;
-        max-height: 300px;
-    }
-    .text-align {
-        padding: 0;
-    }
+  .menu-style {
+    padding: 0 20px 0 20px;
   }
+
+  .menu {
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .menu-style {
+    padding: 0 10px 0 10px;
+    transform: scale(0.9);
+  }
+  
+  .logotype {
+    transform: scale(0.9);
+  }
+  
+  .footer-text-style {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .owner-style-h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+
+  .social-links-style {
+    padding: 30px 10px 0 10px;
+  }
+}
+  
+@media screen and (max-width: 430px) {
+  .menu-style {
+    padding: 0 5px 0 5px;
+    transform: scale(0.8);
+  }
+  
+  .logotype {
+    transform: scale(0.8);
+  }
+  
+  .footer-text-style {
+    font-size: 20px;
+  }
+  
+  .owners-avatars {
+    max-width: 275px;
+    max-height: 275px;
+    border: solid 6px #470081;
+    border-radius: 250px;
+  }
+
+  .owner-position {
+    margin: 0;
+  }
+
+  .text-align {
+    padding: 10px;
+  }
+
+  .owner-style-h1 {
+    padding: 10px;
+  }
+}
+  
+@media screen and (max-width: 375px) {
+  .menu-style {
+    padding: 0;
+    transform: scale(0.6);
+  }
+  
+  .footer-text-style {
+    font-size: 25px;
+    padding: 5px;
+  }
+  
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  
+  footer {
+    padding-top: 10px;
+    height: 200px;
+  }
+}
