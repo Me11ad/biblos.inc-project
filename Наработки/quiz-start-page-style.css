@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'MADELikesSlab';
+	src: url('./fonts/madelikesslab.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/madelikesslab.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/madelikesslab.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/madelikesslab.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/madelikesslab.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/madelikesslab.svg#madelikesslab') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+*{  
+    color: aliceblue;
+    font-family: 'MAdeLikesSlab';
+    font-weight: 400;
+    padding: 0%;
+
+}
+body{
+    background: rgb(118,0,142);
+    background: linear-gradient(0deg, #5c0e9c 25%, #9a3bf3 50%);
+    height: 950px;
+    width: 1920;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    font-family: 'Exo 1', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fcfcfcd7;
+    background: #FAC406;
+    box-shadow: 4px 4px 0px #be9b1a;
+    padding: 16px 48px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    bottom:-260px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 64px;
+    padding-top: 30px;
+}
+bottom{
+    display: flex;
+    justify-content: center;
+    transform: translate(0px, 600px);
+    font-size: 24px;
+    text-align: center;
+}
+underheader{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    font-size: 24px;
+
+}
