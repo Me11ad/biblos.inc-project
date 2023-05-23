@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="games-styles.css">
+    <title>Games Quiz</title>
+</head>
+<body>
+    <header>
+        <a href="../mainpage.html"><img class="logotype" src="../img/logo.svg" alt="logotype"></a>
+    </header>
+    <main>
+        <div class="quiz" id="quiz">
+            <div class="question-box">
+                <h2 class="qst" id="question">Question text</h2>
+            </div>
+            <div class="time">
+                <span id="timer">15s</span>
+            </div>
+            <ul class="text">
+                <div class="first-block-answers">
+                    <li class="answers">
+                        <input name="answer" type="radio" id="a" class="answer">
+                        <label for="a" id="answer_a">Question</label>
+                    </li>
+                    <li class="answers">
+                        <input name="answer" type="radio" id="b" class="answer">
+                        <label for="b" id="answer_b">Question</label>
+                    </li>
+                </div>
+                <div class="second-block-answers">
+                    <li class="answers">
+                        <input name="answer" type="radio" id="c" class="answer">
+                        <label for="c" id="answer_c">Question</label>
+                    </li>
+                    <li class="answers">
+                        <input name="answer" type="radio" id="d" class="answer">
+                        <label for="d" id="answer_d">Question</label>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="endless">
+            <button class="btn" id="sumbit">Ответ</button>
+        </div>
+        <script src="./games-script.js"></script>
+    </main>
+    <footer>
+        <div class="footer-menu">
+            <a href="../about.html">
+                <li class="footer-text-style">О проекте</li>
+            </a>
+            <a href="../contacts.html">
+                <li class="footer-text-style">Контакты</li>
+            </a>
+            <a href="#">
+                <li class="footer-text-style">Обратная связь</li>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
