@@ -104,7 +104,7 @@ let score = 0
 
 const time = () => {
    console.log('Nice to see you here')
-   let count = 16
+   let count = 31
    countdown = setInterval(() => {
       count--
       timer.innerHTML = `${count}s`
