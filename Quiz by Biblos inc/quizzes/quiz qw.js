@@ -1,4 +1,4 @@
-let quizId = 1;
+let quizId = 2;
 const allAns = 11;
 const sumbit = document.getElementById('sumbit')
 const timer = document.getElementById('timer')
@@ -23,7 +23,7 @@ async function getResponce() {
         <li class="answers">
         <input name="answer" type="radio" id="a" class="answer" onclick="setCurrAnswer(${content[0]['is_correct']})"
         >
-        <label for="a" id="answer_a">${content[0]['answer']}</label>
+        <label for="a" id="answer_a">${content[0]['category_id: 1']['answer']}</label>
     </li>
     <li class="answers">
         <input name="answer" type="radio" id="b" class="answer" onclick="setCurrAnswer(${content[1]['is_correct']})"
@@ -123,7 +123,7 @@ const setCurrAnswer = (isTrue) => {
         score++
         console.log("Правильно")
     } else {
-        console.log("Неа")
+        console.log("Нет")
     }
 }
 
