@@ -33,7 +33,7 @@ app.get('/question/title', (req, res) => {
 
 
 
-app.get('/quiz/:id', (req, res) => {
+app.get('/test2/:id', (req, res) => {
     const quizId = req.params.id;
 
     db.all(`SELECT * FROM question WHERE id = ?`, quizId, (err, row) => {
@@ -46,7 +46,7 @@ app.get('/quiz/:id', (req, res) => {
     });
 });
 
-app.get('/quiz/answer/:id', (req, res) => {
+app.get('/test2/answer/:id', (req, res) => {
     const quizId = req.params.id;
 
     db.all(`SELECT * FROM answer WHERE questions_id = ?`, quizId, (err, row) => {
@@ -60,20 +60,37 @@ app.get('/quiz/answer/:id', (req, res) => {
 });
 
 
-app.get('/quiz/:id', (req, res) => {
+app.get('/test2/:id', (req, res) => {
     const { id } = req.params
 
     const request = `SELECT * FROM  answers WHERE ID=${id} `
 
 
     console.log(request)
-    db.run(request, (result, err) => {
+    db.get(request, (result, err) => {
         if (err) {
             res.json(err)
         }
         res.json(result)
     })
 })
+
+app.post('/test2/question', (req, res) => {
+    const questions = req.body
+    const request = `INSERT INTO question VALUES(
+    null,
+    '${questions.questions}'
+    )`
+    console.log(request)
+
+    db.run(request, (err) => {
+        if (err) {
+            res.json(err)
+        }
+        res.json('добавлено')
+    })
+})
+
 
 
 
