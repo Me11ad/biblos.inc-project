@@ -1,0 +1,32 @@
+*{
+  font-family: 'Exo 2', sans-serif;
+  margin: 0%;
+  padding: 0%;
+  color: azure;
+  text-align: center;
+  background-color:rgb(41, 38, 38)
+}
+.main{
+  font-size: 50px;
+  padding-top: 40px;
+}
+.rule p{
+  padding-top: 15px;
+  font-size: 30px;
+}
+.rule h1{
+  padding-top: 15px;
+  font-size: 25px;
+}
+.rule h2{
+  font-size: 25px;
+  padding-top: 15px;
+}
+.rule h3{
+  font-size: 25px;
+  padding-top: 15px;
+}
+.rule h4{
+  font-size: 25px;
+  padding-top: 15px;
+}
