@@ -1,18 +1,61 @@
+@font-face {
+  font-family: 'MADELikesSlab';
+	src: url('./fonts/madelikesslab.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/madelikesslab.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/madelikesslab.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/madelikesslab.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/madelikesslab.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/madelikesslab.svg#madelikesslab') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-body {
-    background: rgb(118,0,142);
 
-  }
-  main .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px;
-  }
+body {
+  background: rgb(118,0,142);
+  background: linear-gradient(0deg, #5c0e9c 25%, #9a3bf3 50%);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 100px;
+  background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
+}
+
+.cons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  height: 100px;
+}
+
+.cons-name {
+  font-family: 'MADELikesSlab';
+  color: #616161;
+}
+
+.wrapper {
+  padding: 60px 0;
+}
+
+img {
+  pointer-events: none;
+}
+
+
+
   .update-box{
 width: 900px;
 height: 436px;
