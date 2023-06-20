@@ -57,7 +57,7 @@ header {
 
 .wrapper {
     border: 2px white solid;
-    margin: 40px 320px;
+    margin: 40px 340px;
     border-radius: 80px;
     padding: 40px;
     background: rgb(118,0,142);
@@ -131,7 +131,7 @@ header {
 }
 
 .achv-list-block {
-    border: 3px black solid;
+    border: 3px #FFF1FE solid;
     background-color: #FFF1FE;
     border-radius: 60px;
     padding-bottom: 220px;
