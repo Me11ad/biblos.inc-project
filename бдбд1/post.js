@@ -3,7 +3,7 @@ const form = document.querySelector('#mars-once')
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault()
-
+   
     let data
     const elementsArray = Array.from(form.elements)
 
