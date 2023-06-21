@@ -1,0 +1,266 @@
+@font-face {
+	font-family: 'MADELikesSlab';
+	src: url('./fonts/madelikesslab.eot'); /* IE 9 Compatibility Mode */
+	src: url('./fonts/madelikesslab.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('./fonts/madelikesslab.woff2') format('woff2'), /* Super Modern Browsers */
+		url('./fonts/madelikesslab.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('./fonts/madelikesslab.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/madelikesslab.svg#madelikesslab') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  background: rgb(118,0,142);
+  background: linear-gradient(0deg, #5c0e9c 25%, #9a3bf3 50%);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotype {
+  display: flex;
+  justify-content: flex-start;
+  pointer-events: none;
+  width: 300px;
+  height: 275px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-style {
+  padding-right: 50px;
+  pointer-events: none;
+}
+
+main { 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer {
+    border-top: 6px #FFF1FE dotted;
+    height: 160px;
+    padding-top: 40px;
+}
+  
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+  
+.footer-text-style {
+    font-size: 30px;
+    color: #FFF1FE;
+    font-family: "MADELikesSlab";
+}
+  
+.footer-text-style:hover {
+    color: rgb(187, 172, 255);
+    transition: 0.2s linear;
+}
+
+h1 {
+    font-family: "MADELikesSlab";
+    font-size: 60px;
+    color: #FFF1FE;
+    padding: 20px;
+}
+
+p {
+    font-family: "MADELikesSlab";
+    font-size: 30px;
+    color: #FFF1FE;
+    padding-left: 20px;
+}
+
+a {
+    font-size: 30px;
+    color: #FFF1FE;
+    font-family: "MADELikesSlab";
+}
+
+a:hover {
+    color: rgb(187, 172, 255);
+    transition: 0.2s linear;
+}
+
+.owner-style-h1 {
+    font-size: 40px;
+}
+
+.owner-position {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.text-align {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.owners-avatars {
+    pointer-events: none;
+    transform: scale(0.9);
+    border: solid 8px #470081;
+    border-radius: 300px;
+}
+
+.social-links-style {
+    padding: 40px 0 0 70px;
+}
+  
+@media screen and (max-width: 1100px) {
+  .owner-position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  .text-align {
+    display: flex;
+    justify-content: center;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-style {
+    padding: 0 20px 0 20px;
+  }
+
+  .menu {
+    padding-top: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .menu-style {
+    padding: 0 10px 0 10px;
+    transform: scale(0.9);
+  }
+  
+  .logotype {
+    transform: scale(0.9);
+  }
+  
+  .footer-text-style {
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .owner-style-h1 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+
+  .social-links-style {
+    padding: 30px 10px 0 10px;
+  }
+}
+  
+@media screen and (max-width: 430px) {
+  .menu-style {
+    padding: 0 5px 0 5px;
+    transform: scale(0.8);
+  }
+  
+  .logotype {
+    transform: scale(0.8);
+  }
+  
+  .footer-text-style {
+    font-size: 20px;
+  }
+  
+  .owners-avatars {
+    max-width: 275px;
+    max-height: 275px;
+    border: solid 6px #470081;
+    border-radius: 250px;
+  }
+
+  .owner-position {
+    margin: 0;
+  }
+
+  .text-align {
+    padding: 10px;
+  }
+
+  .owner-style-h1 {
+    padding: 10px;
+  }
+}
+  
+@media screen and (max-width: 375px) {
+  .menu-style {
+    padding: 0;
+    transform: scale(0.6);
+  }
+  
+  .footer-text-style {
+    font-size: 25px;
+    padding: 5px;
+  }
+  
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  
+  footer {
+    padding-top: 10px;
+    height: 200px;
+  }
+}
