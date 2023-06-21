@@ -54,7 +54,7 @@ form.addEventListener('submit', async (event) => {
             </div>
             </div>
             `
-        }
+        } 
     })
     console.log(a.password)
         if (a.email === email && password.length != 0) {
